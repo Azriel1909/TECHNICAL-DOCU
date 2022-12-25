@@ -84,9 +84,16 @@ article {
   border-top: 2px solid var(--bc-accent);  
 }
 
+h1 {
+  color: var(--bc-accent);
+}
 
 code {
   font-family: var(--ff-ubuntu);
+}
+
+footer {
+  color: var(--bc-accent);
 }
 
 @media (max-width: 600px) {

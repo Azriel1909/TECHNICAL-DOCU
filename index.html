@@ -79,8 +79,8 @@
           <h1>HTML & CSS</h1>
         </header>
         <article>
-          <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</p>
-          <h2>Anatomy</h2>
+          <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance / presentation (CSS) or functionality / behavior (JavaScript).</p>
+          <h1>Anatomy</h1>
           <p><strong>Opening tag:</strong> This consists of the name of the element, wrapped in opening and closing angle brackets.</p>
           <p><strong>The closing tag:</strong> This is the same as the opening tag, except that it includes a forward slash before the element name.</p>
           <p><strong>The content:</strong> This is the content of the element, which in this case, is just text.
@@ -93,12 +93,11 @@
       <section class="main-section" id="Hello_World?">
         <header>
           <h1>Hello World?</h1>
-          
         </header>
         <article>
           <p>Anatomy of and HTML document</p>
           <code>!DOCTYPE html</code>
-          <p> Doctype. It is a required preamble. In the mists of time, when HTML was young (around 1991/92), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. </p>
+          <p>Doctype. It is a required preamble. In the mists of time, when HTML was young (around 1991/92), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. </p>
           <br>
           <code>html</code>
           <p>This element wraps all the content on the entire page and is sometimes known as the root element.</p>
@@ -122,15 +121,20 @@
           <h1>Basic Tags</h1>
         </header>
         <article>
-          <p>HTML is a...</p>
-          <code>code here!</code>
-          <p>HTML is a...</p>
+          <p><strong>Element Content</strong></p>
+          <p>The content of an HTML element is the information between the opening and closing tags of an element.</p>
           <ol>
-            <li>item: <code>code here!</code></li>
-            <li>item: <code>code here!</code></li>
-            <li>item: <code>code here!</code></li>
-            <li>item: <code>code here!</code></li>
-            <li>item: <code>code here!</code></li>
+            <li>List Item: <code>li</code></li>
+            <li>Ordered List: <code>ol</code></li>
+            <li>Unordered List: <code>ul</code></li>
+            <li>Video: <code>video</code></li>
+            <li>Emphasis: <code>em</code></li>
+            <li>Division: <code>div</code></li>
+            <li>Line Break: <code>br</code></li>
+            <li>Headings: <code>h1-h6</code></li>
+            <li>Paragraph: <code>p</code></li>
+            <li>Span: <code>span</code></li>
+            <li>Strong: <code>strong</code></li>
           </ol>
         </article>
       </section>
@@ -140,11 +144,12 @@
           <h1>Document Structure</h1>
         </header>
         <article>
-          <p>HTML is a...</p>
-          <code>code here!</code>
-          <p>HTML is a...</p>
-          <code>code here!</code>
-          <p>HTML is a...</p>
+          <li>List Item: <code>li</code></li>
+            <li>Division: <code>div</code></li>
+            <li>Line Break: <code>br</code></li>
+            <li>Headings: <code>h1-h6</code></li>
+            <li>Paragraph: <code>p</code></li>
+            <li>Span: <code>span</code></li>
         </article>
       </section>
       <!-- part 7 -->
@@ -153,7 +158,23 @@
           <h1>CSS Selectors</h1>
         </header>
         <article>
-          <p>HTML is a...</p>
+          <p>CSS selectors define the pattern to select elements to which a set of CSS rules are then applied. CSS selectors can be grouped into the following categories based on the type of elements they can select.</p>
+          <p>Universal Selector</p>
+          <code>*</code>
+          <p>Selects all elements. Optionally, it may be restricted to a specific namespace or to all namespaces. </p>
+          <br>
+          <code>Type selector</code>
+          <p>Selects all elements that have the given node name.</p>
+          <br>
+          <code>Class Selector</code>
+          <p>Selects all elements that have the given class attribute.</p>
+          <br> 
+          <code>ID Selector</code>
+          <p>Selects an element based on the value of its id attribute. There should be only one element with a given ID in a document.</p>
+          <br>
+          <code>Attribute Selector</code>
+          <p>Selects all elements that have the given attribute.</p>
+          <br>            
         </article>
       </section>
     <!-- part 8 -->
@@ -162,16 +183,7 @@
           <h1>Pseudo Classes</h1>
         </header>
         <article>
-          <p>HTML is a...</p>
-          <code>code here!</code>
-          <p>HTML is a...</p>
-          <ol>
-            <li>item: <code>code here!</code></li>
-            <li>item: <code>code here!</code></li>
-            <li>item: <code>code here!</code></li>
-            <li>item: <code>code here!</code></li>
-            <li>item: <code>code here!</code></li>
-          </ol>
+          <p>The: pseudo allow the selection of elements based on state information that is not contained in the document tree. Example: a:visited will match all < a > elements that have been visited by the user.</p>
         </article>
       </section>
     <!-- part 9 -->
@@ -180,9 +192,16 @@
           <h1>Attribute Selectors</h1>
         </header>
         <article>
-          <p>HTML is a...</p>
-          <code>code here!</code>
-          <p>HTML is a...</p>
+          <p>Selects all elements that have the given attribute.</p>
+          <code>[attr] [attr=value] [attr~=value] [attr|=value] [attr⁼value] [attr$=value] [attr*=value]</code>
+        </article>
+      </section>
+      <section class="main-section">
+        <header>
+          <h1>Reference</h1>
+        </header>
+        <article>
+          <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank">MDN</a></p>
         </article>
       </section>
       <footer>
